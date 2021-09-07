@@ -30,13 +30,13 @@ print(isPalindrome(1234421))
 '''
 
 def maxDrome():
-    dromes = []
+    drome = 0
     for i in range(100,1000):
         for j in range(100,1000):
             num = i*j
-            if isPalindrome(num):
-                dromes.append(num)
-    return max(dromes)
+            if isPalindrome(num) and num > drome:
+                drome = num
+    return drome
 
 
 if __name__ == "__main__":
