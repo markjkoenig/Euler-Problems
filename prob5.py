@@ -20,7 +20,7 @@ def LCM(x, y): # LCM eqn for two nums
 
 
 def induct(foo, k): 
-# Induct any function up to k arguments (lcm(x1, x2,..., xk) = lcm(lcm(x1, x2), x3,..., xk))
+# Induct a function up to k arguments (lcm(x1, x2,..., xk) = lcm(lcm(x1, x2), x3,..., xk) = ...)
     S = [i for i in range(1, k+1)]
     while len(S) != 1:
         S[0] = foo(S[0], S[1])
