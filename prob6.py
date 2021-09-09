@@ -13,7 +13,7 @@ Hence the difference between the sum of the squares of the first ten natural num
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 '''
 
-def ss(k):
+def ssd(k):
     sumSquares = 0 # I know there is a fancy formula but I don't remember exactly...
     for i in range(k+1):
         sumSquares += i**2
@@ -25,4 +25,4 @@ def ss(k):
 
 
 if __name__ == '__main__':
-    print(ss(100))
+    print(ssd(100))
