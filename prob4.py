@@ -6,8 +6,6 @@ A palindromic number reads the same both ways. The largest palindrome made from 
 
 Find the largest palindrome made from the product of two 3-digit numbers.
 '''
-digits = [0,1,2,3,4,5,6,7,8,9]
-
 
 def isPalindrome(n):
     s = str(n)
@@ -21,14 +19,6 @@ def isPalindrome(n):
     else:
         return True
     
-'''
-print(isPalindrome(2))
-print(isPalindrome(121))
-print(isPalindrome(122))
-print(isPalindrome(135531))
-print(isPalindrome(1234421))
-'''
-
 def maxDrome():
     drome = 0
     for i in range(100,1000):
