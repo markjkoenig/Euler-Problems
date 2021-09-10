@@ -8,14 +8,12 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 '''
 
 def problem1(n):
-#Find sum of all multiples of 3 or 5 below 1000
     x = 0
     for i in range(n):
         if i%3 == 0 or i%5 == 0:
             x += i
     return x
 
-#print('Sum of all multiples of 3 or 5 below 1000 is ' + str(problem1(1000)))
 
 if __name__ == "__main__":
     print(problem1(1000))
